@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="utilities.extentreport"></listener>
+</listeners>
+  <test name="LoginDDT">
+  <parameter name="os" value="Windows"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testcases.LoginTest_DDT"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="AccRegis">
+    <parameter name="os" value="Windows"></parameter>
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testcases.AccountRegistration"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Login">
+    <parameter name="os" value="Windows"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+    <test name="product search">
+    <parameter name="os" value="Windows"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testcases.SearchingProduct"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
