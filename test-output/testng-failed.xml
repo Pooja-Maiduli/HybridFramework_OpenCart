@@ -4,17 +4,17 @@
   <listeners>
     <listener class-name="utilities.extentreport"/>
   </listeners>
-  <test thread-count="5" name="LoginDDT(failed)">
+  <test thread-count="5" name="product search(failed)">
     <parameter name="os" value="Windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.LoginTest_DDT">
+      <class name="testcases.AddToCart">
         <methods>
           <include name="teardown"/>
+          <include name="addToCart"/>
           <include name="login"/>
-          <include name="login" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- testcases.LoginTest_DDT -->
+      </class> <!-- testcases.AddToCart -->
     </classes>
-  </test> <!-- LoginDDT(failed) -->
+  </test> <!-- product search(failed) -->
 </suite> <!-- Failed suite [Suite] -->

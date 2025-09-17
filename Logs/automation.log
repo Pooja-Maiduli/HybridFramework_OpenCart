@@ -20,3 +20,4 @@
 21:23:23.487 [main] INFO  testcases.LoginTest - ***********Starting login test*********
 21:23:44.976 [main] INFO  testcases.SearchingProduct - **********Home Page************
 21:23:45.459 [main] INFO  testcases.SearchingProduct - **********Search Page************
+22:51:40.995 [main] INFO  testcases.AccountRegistration - ********Register account test case started*********
