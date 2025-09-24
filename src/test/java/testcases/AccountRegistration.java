@@ -21,12 +21,12 @@ public class AccountRegistration extends basetest {
     public void registration() throws InterruptedException {
     	
     	logger.info("********Register account test case started*********");
-       HomePage hp=new HomePage(driver);
+       HomePage hp=new HomePage();
        hp.register();
-       WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(30));
+       WebDriverWait mywait=new WebDriverWait(getDriver(),Duration.ofSeconds(30));
 
        logger.info("********Adding information for Account Registration*********");
-    	RegisterAccount ra=new RegisterAccount(driver);
+    	RegisterAccount ra=new RegisterAccount();
     	
     	ra.setfname("Pooja");
     	ra.setlname("pooja");

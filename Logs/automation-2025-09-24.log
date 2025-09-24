@@ -1,0 +1,47 @@
+21:21:52.407 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:21:52.420 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:21:52.455 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:21:52.457 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:21:52.491 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:21:52.495 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:21:52.543 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:21:52.545 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:21:52.601 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:21:52.602 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:21:52.646 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+21:21:52.647 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+21:21:52.701 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
+21:22:04.826 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
+21:22:14.910 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
+21:22:24.936 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
+21:23:00.492 [main] INFO  testcases.AccountRegistration - ********Register account test case started*********
+21:23:02.605 [main] INFO  testcases.AccountRegistration - ********Adding information for Account Registration*********
+21:23:10.874 [main] INFO  testcases.AccountRegistration - *********Validating Confirmation Message***********
+21:23:23.487 [main] INFO  testcases.LoginTest - ***********Starting login test*********
+21:23:44.976 [main] INFO  testcases.SearchingProduct - **********Home Page************
+21:23:45.459 [main] INFO  testcases.SearchingProduct - **********Search Page************
+22:51:40.995 [main] INFO  testcases.AccountRegistration - ********Register account test case started*********
+13:46:19.137 [main] INFO  testcases.AddToWishlist - ************Home Page****************
+13:46:19.203 [main] INFO  testcases.AddToWishlist - **************Searching Product*****************
+13:46:20.799 [main] INFO  testcases.AddToWishlist - ************Search Criteria Page*************
+13:57:33.050 [main] INFO  testcases.AddToWishlist - ************Home Page****************
+13:57:36.738 [main] INFO  testcases.AddToWishlist - *************Login*************
+13:57:43.586 [main] INFO  testcases.AddToWishlist - **************Searching Product*****************
+13:57:44.244 [main] INFO  testcases.AddToWishlist - ************Search Criteria Page*************
+14:01:03.251 [main] INFO  testcases.AddToWishlist - ************Home Page****************
+14:01:07.034 [main] INFO  testcases.AddToWishlist - *************Login*************
+14:01:12.539 [main] INFO  testcases.AddToWishlist - **************Searching Product*****************
+14:01:14.298 [main] INFO  testcases.AddToWishlist - ************Search Criteria Page*************
+14:01:15.099 [main] INFO  testcases.AddToWishlist - *************Wishlist Page***************
+14:03:49.273 [TestNG-tests-1] INFO  testcases.AddToWishlist - ************Home Page****************
+14:03:53.176 [TestNG-tests-1] INFO  testcases.AddToWishlist - *************Login*************
+14:05:03.229 [TestNG-tests-1] INFO  testcases.AddToWishlist - ************Home Page****************
+14:05:07.756 [TestNG-tests-1] INFO  testcases.AddToWishlist - *************Login*************
+14:13:17.476 [TestNG-tests-1] INFO  testcases.LoginTest - ***********Starting login test*********
+14:13:29.093 [TestNG-tests-2] INFO  testcases.LoginTest - ***********Starting login test*********
+15:07:33.939 [TestNG-tests-1] INFO  testcases.AddToWishlist - ************Home Page****************
+15:07:37.772 [TestNG-tests-1] INFO  testcases.AddToWishlist - *************Login*************
+15:07:44.530 [TestNG-tests-1] INFO  testcases.AddToWishlist - **************Searching Product*****************
+15:07:45.539 [TestNG-tests-1] INFO  testcases.AddToWishlist - ************Search Criteria Page*************
+15:07:46.449 [TestNG-tests-1] INFO  testcases.AddToWishlist - *************Wishlist Page***************
+15:16:18.337 [main] INFO  testcases.AddToWishlist - ************Home Page****************

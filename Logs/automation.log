@@ -1,23 +1,6 @@
-21:21:52.407 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-21:21:52.420 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-21:21:52.455 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-21:21:52.457 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-21:21:52.491 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-21:21:52.495 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-21:21:52.543 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-21:21:52.545 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-21:21:52.601 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-21:21:52.602 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-21:21:52.646 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-21:21:52.647 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-21:21:52.701 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
-21:22:04.826 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
-21:22:14.910 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
-21:22:24.936 [main] INFO  testcases.LoginTest_DDT - ***********Starting login test*********
-21:23:00.492 [main] INFO  testcases.AccountRegistration - ********Register account test case started*********
-21:23:02.605 [main] INFO  testcases.AccountRegistration - ********Adding information for Account Registration*********
-21:23:10.874 [main] INFO  testcases.AccountRegistration - *********Validating Confirmation Message***********
-21:23:23.487 [main] INFO  testcases.LoginTest - ***********Starting login test*********
-21:23:44.976 [main] INFO  testcases.SearchingProduct - **********Home Page************
-21:23:45.459 [main] INFO  testcases.SearchingProduct - **********Search Page************
-22:51:40.995 [main] INFO  testcases.AccountRegistration - ********Register account test case started*********
+15:16:22.043 [main] INFO  testcases.AddToWishlist - *************Login*************
+15:16:28.641 [main] INFO  testcases.AddToWishlist - **************Searching Product*****************
+15:16:29.495 [main] INFO  testcases.AddToWishlist - ************Search Criteria Page*************
+15:16:30.400 [main] INFO  testcases.AddToWishlist - *************Wishlist Page***************
+15:38:25.598 [TestNG-test-chrometest-1] INFO  testcases.LoginTest - ***********Starting login test*********
+15:38:42.743 [TestNG-test-edgetest-1] INFO  testcases.LoginTest - ***********Starting login test*********

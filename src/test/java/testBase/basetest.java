@@ -32,17 +32,23 @@ public class basetest {
 	
 	public Properties p;
 
-	public static WebDriver driver;
+	public static ThreadLocal<WebDriver> driver= new ThreadLocal<>();;
 	public Logger logger;
 	public JavascriptExecutor js;
+	public static WebDriver getDriver() {
+        return driver.get();
+    }
 	
-	@BeforeClass
+	@BeforeMethod
 	@Parameters({"browser","os"})
 	public void login(String br, String os) throws IOException {
 		FileReader file = new FileReader(".//src//test//resources//config.properties");
 		p= new Properties();
 		p.load(file);
 		logger=LogManager.getLogger(this.getClass());
+		WebDriver localDriver = null;
+		
+
 		
 		
 		if(p.getProperty("execution_env").equalsIgnoreCase("remote")){
@@ -60,29 +66,29 @@ public class basetest {
 			default :System.out.println("No matching browser"); return;	
 			
 			}
-			driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+			localDriver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 
 		}
 		
 		
 			if(p.getProperty("execution_env").equalsIgnoreCase("local")){
 		switch(br.toLowerCase()) {
-		case "chrome" : driver =new ChromeDriver(); break;
-		case "edge" : driver =new EdgeDriver(); break;
+		case "chrome" : localDriver =new ChromeDriver(); break;
+		case "edge" : localDriver =new EdgeDriver(); break;
 		default :System.out.println("invalid browser"); return;
 		
 		
 		}
 			}
 		
-		
-		WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(30));
+			driver.set(localDriver);
+		WebDriverWait mywait=new WebDriverWait(getDriver(),Duration.ofSeconds(30));
 	
-		driver.get(p.getProperty("appurl1"));
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		js= (JavascriptExecutor) driver;
+		getDriver().get(p.getProperty("appurl1"));
+		getDriver().manage().deleteAllCookies();
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		js= (JavascriptExecutor) getDriver();
 		}
 		
 	
@@ -90,9 +96,9 @@ public class basetest {
 	
 	
 
-	@AfterClass
+	@AfterMethod
 	public void teardown() {
-		driver.quit();
+		getDriver().quit();
 	}
 	
 	

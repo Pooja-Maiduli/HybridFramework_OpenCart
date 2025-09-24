@@ -24,17 +24,17 @@ public class LoginTest extends basetest{
 		logger.info("***********Starting login test*********");
 		
 	
-		HomePage hp=new HomePage(driver);
+		HomePage hp=new HomePage();
 	       hp.login();
-	       WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(30));
+	       WebDriverWait mywait=new WebDriverWait(getDriver(),Duration.ofSeconds(30));
 
 		
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp=new LoginPage();
 		
 		lp.enteremail(p.getProperty("email"));
 		lp.enterpass(p.getProperty("password"));
 		lp.loginbtn();
-		AccountPage ap=new AccountPage(driver);
+		AccountPage ap=new AccountPage();
 		boolean pagexist=ap.myaccountpage();
 		
 			Assert.assertEquals(pagexist,true,"Login Failed");

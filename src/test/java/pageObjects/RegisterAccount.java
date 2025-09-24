@@ -6,10 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class RegisterAccount extends BasePage{
 
-	public RegisterAccount(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+	
 	//locators
 	
 	

@@ -8,10 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SearchCriteria extends BasePage{
 
-	public SearchCriteria(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+
 	
 	@FindBy(xpath="//input[@id='input-search']")
 	WebElement searchCriteria;
@@ -35,7 +32,11 @@ public class SearchCriteria extends BasePage{
 	WebElement successText;
 	
 	@FindBy(xpath="//a[normalize-space()='shopping cart']")
-	WebElement shoppingcartlink;
+	WebElement successTextlink;
+	
+	@FindBy(xpath="//button[@data-original-title=\"Add to Wish List\"]")
+	WebElement AddtoWishlist;
+	
 	
 	public void searchCri(String product) {
 		searchCriteria.sendKeys(product);
@@ -76,8 +77,12 @@ public class SearchCriteria extends BasePage{
 	
 	public WebElement shoppingcartlink() {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click()",shoppingcartlink);
-				return shoppingcartlink;
+		js.executeScript("arguments[0].click()",successTextlink);
+				return successTextlink;
+	}
+	
+	public void AddToWishList() {
+		AddtoWishlist.click();
 	}
 	
 	

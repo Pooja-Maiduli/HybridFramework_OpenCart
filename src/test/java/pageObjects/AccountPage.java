@@ -6,10 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AccountPage extends BasePage{
 
-	public AccountPage(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+	
 
 
 		

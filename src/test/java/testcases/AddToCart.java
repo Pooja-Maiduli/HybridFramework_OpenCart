@@ -15,10 +15,10 @@ public class AddToCart extends basetest{
 	
 	@Test(groups="Regression")
 	public void addToCart() throws InterruptedException {
-	HomePage hp=new HomePage(driver);
+	HomePage hp=new HomePage();
     hp.searchTextBox(p.getProperty("productname"));
     hp.searchproductbtn();
-   SearchCriteria sc= new SearchCriteria(driver);
+   SearchCriteria sc= new SearchCriteria();
    js.executeScript("arguments[0].scrollIntoView(true);", sc.productTitle());
     sc.AddToCart();
     String text= sc.successText();
@@ -27,9 +27,9 @@ public class AddToCart extends basetest{
     js.executeScript("arguments[0].scrollIntoView(true);", sc.shoppingcartlink());
     Thread.sleep(3000);
     sc.shoppingcartlink();
-    ShoppingCartPage scp=new ShoppingCartPage(driver);
-    String productvalidation=scp.productval();
-    Assert.assertEquals(productvalidation, p.getProperty("productname"));
+  
+    ShoppingCartPage scp=new ShoppingCartPage();
+	 Assert.assertEquals(scp.productval(), p.getProperty("productname"));
 	}
 
 	

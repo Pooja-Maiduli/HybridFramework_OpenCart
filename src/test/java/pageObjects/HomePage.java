@@ -7,11 +7,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage{
 	
-	public HomePage(WebDriver driver)
-	{
-		super(driver);
-	}
 	
+	
+
+
 	//locators
 	@FindBy(xpath="//ul[@class='list-inline']//li[@class='dropdown']")
 	WebElement homepageicon;
@@ -34,6 +33,7 @@ public class HomePage extends BasePage{
 		homepageicon.click();
 		login.click();
 		Thread.sleep(3000);	}
+	
 	public void searchproductbtn() {
 		searchBtn.click();	}
 

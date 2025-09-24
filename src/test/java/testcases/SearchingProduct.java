@@ -14,11 +14,11 @@ public class SearchingProduct extends basetest{
 	@Test(groups="Regression")
 	public void searchingproduct() {
 		logger.info("**********Home Page************");
-		HomePage hp=new HomePage(driver);
+		HomePage hp=new HomePage();
 		hp.searchproductbtn();
 		
 		logger.info("**********Search Page************");
-		SearchCriteria sc=new SearchCriteria(driver);
+		SearchCriteria sc=new SearchCriteria();
 		sc.searchCri("Iphone");
 		sc.cate("Phones & PDAs");
 		sc.searchitem();

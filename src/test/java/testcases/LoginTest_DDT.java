@@ -27,17 +27,17 @@ public class LoginTest_DDT extends basetest{
 		
 	try {
 		
-		HomePage hp=new HomePage(driver);
+		HomePage hp=new HomePage();
 	       hp.login();
-	       WebDriverWait mywait=new WebDriverWait(driver,Duration.ofSeconds(30));
+	       WebDriverWait mywait=new WebDriverWait(getDriver(),Duration.ofSeconds(30));
 
 		
-		LoginPage lp=new LoginPage(driver);
+		LoginPage lp=new LoginPage();
 		
 		lp.enteremail(email);
 		lp.enterpass(Password);
 		lp.loginbtn();
-		AccountPage ap=new AccountPage(driver);
+		AccountPage ap=new AccountPage();
 		boolean pagexist=ap.myaccountpage();
 		
 			if(Exp.equalsIgnoreCase("Valid"))

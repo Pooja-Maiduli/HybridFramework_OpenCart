@@ -3,14 +3,16 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
+import testBase.basetest;
+
 public class BasePage {
 	
 	//constructor
- WebDriver driver;
+	protected WebDriver driver;
 	
-	public BasePage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
-	}
+	public BasePage() {
+        this.driver = basetest.getDriver(); // ThreadLocal driver
+        PageFactory.initElements(this.driver, this);
+    }
 
 }
