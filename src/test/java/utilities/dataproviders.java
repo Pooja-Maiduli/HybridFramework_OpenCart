@@ -10,7 +10,7 @@ public class dataproviders {
     public String[][] getData() throws IOException {
 
         // Path to your Excel file
-        String path = ".\\TestData\\login_data.xlsx";
+        String path = ".\\DataFile\\LoginData.xlsx";
 
         // Create ExcelUtility object
         Utilities xlutil = new Utilities(path);
